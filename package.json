@@ -11,16 +11,14 @@
     "build": "cd client && npm run build",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "start": "node server.js",
-    "heroku-postbuild": "cd client && npm install && npm install --only=dev && npm run build"
+    "heroku-postbuild": "cd client && npm install  && npm run build"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "2.8.5",
     "dotenv": "7.0.0",
     "express": "^4.16.4",
-    "stripe": "6.28.0"
-  },
-  "devDependencies": {
+    "stripe": "6.28.0",
     "concurrently": "^4.0.1"
   }
 }
